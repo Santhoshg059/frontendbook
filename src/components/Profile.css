@@ -1,0 +1,80 @@
+/* Profile.css */
+
+.containerprofile {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 90vh; 
+}
+  
+.cardprofile {
+    display: flex !important;
+    flex-direction: column; 
+    border: 1px solid #ccc;
+    border-radius: 10px !important;
+    padding: 20px;
+    width: 600px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-container {
+    width: 200px !important; /* Width of the profile image */
+    margin-right: 20px !important; 
+    margin-left: auto; /* Align image container to the right */
+}
+
+.profile-image {
+    width: 200px !important;
+    height: 200px; 
+    object-fit: cover !important;
+    border-radius: 50%; /* Make the image circular */
+}
+
+.card-contentprofile {
+    flex: 1 !important; /* Allow content to take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-contentprofile h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-contentprofile p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+input[type="file"] {
+    margin-top: 10px !important; 
+}
+
+button {
+    display: block !important;
+    margin-top: 10px !important; 
+    padding: 10px 20px !important;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px !important;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.separator {
+    margin: 20px 0 !important;
+    border-bottom: 1px solid #ccc;
+}
