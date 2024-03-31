@@ -63,9 +63,9 @@ function Home() {
   };
 
   const filteredBooks = books.filter(book =>
-    book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    book.genre.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    book.author.toLowerCase().includes(searchTerm.toLowerCase())
+    (book.title && book.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
+    (book.genre && book.genre.toLowerCase().includes(searchTerm.toLowerCase())) ||
+    (book.author && book.author.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
   const indexOfLastBook = currentPage * booksPerPage;

@@ -53,7 +53,7 @@ input[type="file"] {
     margin-top: 10px !important; 
 }
 
-button {
+.uploadbtn {
     display: block !important;
     margin-top: 10px !important; 
     padding: 10px 20px !important;
@@ -64,7 +64,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.uploadbtn:hover {
     background-color: #0056b3;
 }
 

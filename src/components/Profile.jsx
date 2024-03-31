@@ -87,7 +87,7 @@ function Profile() {
             />
             {/* Upload button */}
             <input type="file" accept="image/*" onChange={handleImageChange} />
-            <button onClick={handleUploadImage}>Upload</button>
+            <button className='uploadbtn' onClick={handleUploadImage}>Upload</button>
             {uploadError && <p className="error-message">{uploadError}</p>}
           </div>
           <div className="card-contentprofile">
